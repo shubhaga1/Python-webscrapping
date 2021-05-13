@@ -11,3 +11,12 @@ except:
     pass
 f.close()
 print(i)
+
+
+
+# saving the result in file
+# 'w' is for write which will overwrite the existing data.
+
+f = open("missingBlobs.txt", "a")
+f.write(i)
+f.close()
