@@ -1,10 +1,13 @@
-// need to get the blob id from DS checker
 f = open("DS.txt", "r")
+x=[]
+i=""
 try:
     for line in f:
     #     print(line)
         if "blobId" in line: 
-            print(line[90:-2])
+#             x.append(line[90:-2])
+            i= i +"\n" +line[90:-2]
 except:
     pass
 f.close()
+print(i)
